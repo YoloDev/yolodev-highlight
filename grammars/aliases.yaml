@@ -1,0 +1,6 @@
+source.rust: rust
+source.jsonnet: ['jsonnet', 'libjsonnet']
+source.fsharp: ['fsharp', 'fsx', 'fs']
+source.json: 'json'
+source.cs: ['c#', 'csharp', 'dotnet']
+text.html.markdown: ['markdown', 'md']

@@ -1,0 +1,374 @@
+{
+  "source.clojure": {
+    "name": "Clojure",
+    "scopeName": "source.clojure",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-clojure-syntaxes-clojure.tmLanguage.json"
+  },
+  "source.batchfile": {
+    "name": "Batch File",
+    "scopeName": "source.batchfile",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-bat-syntaxes-batchfile.tmLanguage.json"
+  },
+  "source.coffee": {
+    "name": "CoffeeScript",
+    "scopeName": "source.coffee",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-coffeescript-syntaxes-coffeescript.tmLanguage.json"
+  },
+  "source.dockerfile": {
+    "name": "Dockerfile",
+    "scopeName": "source.dockerfile",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-docker-syntaxes-docker.tmLanguage.json"
+  },
+  "source.diff": {
+    "name": "Diff",
+    "scopeName": "source.diff",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-git-syntaxes-diff.tmLanguage.json"
+  },
+  "source.go": {
+    "name": "Go",
+    "scopeName": "source.go",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-go-syntaxes-go.tmLanguage.json"
+  },
+  "source.ignore": {
+    "name": "Ignore",
+    "scopeName": "source.ignore",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-git-syntaxes-ignore.tmLanguage.json"
+  },
+  "text.git-rebase": {
+    "name": "Git Rebase Message",
+    "scopeName": "text.git-rebase",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-git-syntaxes-git-rebase.tmLanguage.json"
+  },
+  "text.git-commit": {
+    "name": "Git Commit Message",
+    "scopeName": "text.git-commit",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-git-syntaxes-git-commit.tmLanguage.json"
+  },
+  "source.fsharp": {
+    "name": "fsharp",
+    "scopeName": "source.fsharp",
+    "aliases": [
+      "fsharp",
+      "fsx",
+      "fs"
+    ],
+    "grammarFile": "vscode/extensions-fsharp-syntaxes-fsharp.tmLanguage.json"
+  },
+  "source.groovy": {
+    "name": "Groovy",
+    "scopeName": "source.groovy",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-groovy-syntaxes-groovy.tmLanguage.json"
+  },
+  "source.hlsl": {
+    "name": "HLSL",
+    "scopeName": "source.hlsl",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-hlsl-syntaxes-hlsl.tmLanguage.json"
+  },
+  "source.c": {
+    "name": "C",
+    "scopeName": "source.c",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-cpp-syntaxes-c.tmLanguage.json"
+  },
+  "source.c.platform": {
+    "name": "Platform",
+    "scopeName": "source.c.platform",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-cpp-syntaxes-platform.tmLanguage.json"
+  },
+  "source.css": {
+    "name": "CSS",
+    "scopeName": "source.css",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-css-syntaxes-css.tmLanguage.json"
+  },
+  "source.cs": {
+    "name": "C#",
+    "scopeName": "source.cs",
+    "aliases": [
+      "c#",
+      "csharp",
+      "dotnet"
+    ],
+    "grammarFile": "vscode/extensions-csharp-syntaxes-csharp.tmLanguage.json"
+  },
+  "text.html.handlebars": {
+    "name": "Handlebars",
+    "scopeName": "text.html.handlebars",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-handlebars-syntaxes-Handlebars.tmLanguage.json"
+  },
+  "text.html.derivative": {
+    "name": "HTML (Derivative)",
+    "scopeName": "text.html.derivative",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-html-syntaxes-html-derivative.tmLanguage.json"
+  },
+  "source.ini": {
+    "name": "Ini",
+    "scopeName": "source.ini",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-ini-syntaxes-ini.tmLanguage.json"
+  },
+  "source.json": {
+    "name": "JSON (JavaScript Next)",
+    "scopeName": "source.json",
+    "aliases": [
+      "json"
+    ],
+    "grammarFile": "vscode/extensions-json-syntaxes-JSON.tmLanguage.json"
+  },
+  "source.json.comments": {
+    "name": "JSON with comments",
+    "scopeName": "source.json.comments",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-json-syntaxes-JSONC.tmLanguage.json"
+  },
+  "text.log": {
+    "name": "Log file",
+    "scopeName": "text.log",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-log-syntaxes-log.tmLanguage.json"
+  },
+  "source.lua": {
+    "name": "Lua",
+    "scopeName": "source.lua",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-lua-syntaxes-lua.tmLanguage.json"
+  },
+  "source.makefile": {
+    "name": "Makefile",
+    "scopeName": "source.makefile",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-make-syntaxes-make.tmLanguage.json"
+  },
+  "source.css.less": {
+    "name": "Less",
+    "scopeName": "source.css.less",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-less-syntaxes-less.tmLanguage.json"
+  },
+  "source.java": {
+    "name": "Java",
+    "scopeName": "source.java",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-java-syntaxes-java.tmLanguage.json"
+  },
+  "source.perl.6": {
+    "name": "Perl 6",
+    "scopeName": "source.perl.6",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-perl-syntaxes-perl6.tmLanguage.json"
+  },
+  "text.html.basic": {
+    "name": "HTML",
+    "scopeName": "text.html.basic",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-html-syntaxes-html.tmLanguage.json"
+  },
+  "text.html.markdown": {
+    "name": "Markdown",
+    "scopeName": "text.html.markdown",
+    "aliases": [
+      "markdown",
+      "md"
+    ],
+    "grammarFile": "vscode/extensions-markdown-basics-syntaxes-markdown.tmLanguage.json"
+  },
+  "text.html.php": {
+    "name": "PHP",
+    "scopeName": "text.html.php",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-php-syntaxes-html.tmLanguage.json"
+  },
+  "source.regexp.python": {
+    "name": "MagicRegExp",
+    "scopeName": "source.regexp.python",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-python-syntaxes-MagicRegExp.tmLanguage.json"
+  },
+  "source.powershell": {
+    "name": "PowerShell",
+    "scopeName": "source.powershell",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-powershell-syntaxes-powershell.tmLanguage.json"
+  },
+  "text.pug": {
+    "name": "Pug",
+    "scopeName": "text.pug",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-pug-syntaxes-pug.tmLanguage.json"
+  },
+  "text.html.cshtml": {
+    "name": "ASP.NET Razor",
+    "scopeName": "text.html.cshtml",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-razor-syntaxes-cshtml.tmLanguage.json"
+  },
+  "source.rust": {
+    "name": "Rust",
+    "scopeName": "source.rust",
+    "aliases": [
+      "rust"
+    ],
+    "grammarFile": "vscode/extensions-rust-syntaxes-rust.tmLanguage.json"
+  },
+  "source.sassdoc": {
+    "name": "SassDoc",
+    "scopeName": "source.sassdoc",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-scss-syntaxes-sassdoc.tmLanguage.json"
+  },
+  "source.shaderlab": {
+    "name": "ShaderLab",
+    "scopeName": "source.shaderlab",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-shaderlab-syntaxes-shaderlab.tmLanguage.json"
+  },
+  "source.perl": {
+    "name": "Perl",
+    "scopeName": "source.perl",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-perl-syntaxes-perl.tmLanguage.json"
+  },
+  "source.r": {
+    "name": "R",
+    "scopeName": "source.r",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-r-syntaxes-r.tmLanguage.json"
+  },
+  "source.shell": {
+    "name": "Shell Script",
+    "scopeName": "source.shell",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-shellscript-syntaxes-shell-unix-bash.tmLanguage.json"
+  },
+  "source.sql": {
+    "name": "SQL",
+    "scopeName": "source.sql",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-sql-syntaxes-sql.tmLanguage.json"
+  },
+  "source.css.scss": {
+    "name": "SCSS",
+    "scopeName": "source.css.scss",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-scss-syntaxes-scss.tmLanguage.json"
+  },
+  "documentation.injection": {
+    "name": null,
+    "scopeName": "documentation.injection",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-typescript-basics-syntaxes-jsdoc.injection.tmLanguage.json"
+  },
+  "source.ruby": {
+    "name": "Ruby",
+    "scopeName": "source.ruby",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-ruby-syntaxes-ruby.tmLanguage.json"
+  },
+  "text.xml.xsl": {
+    "name": "XSL",
+    "scopeName": "text.xml.xsl",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-xml-syntaxes-xsl.tmLanguage.json"
+  },
+  "text.xml": {
+    "name": "XML",
+    "scopeName": "text.xml",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-xml-syntaxes-xml.tmLanguage.json"
+  },
+  "source.python": {
+    "name": "MagicPython",
+    "scopeName": "source.python",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-python-syntaxes-MagicPython.tmLanguage.json"
+  },
+  "source.yaml": {
+    "name": "YAML",
+    "scopeName": "source.yaml",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-yaml-syntaxes-yaml.tmLanguage.json"
+  },
+  "source.js": {
+    "name": "JavaScript (with React support)",
+    "scopeName": "source.js",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-javascript-syntaxes-JavaScript.tmLanguage.json"
+  },
+  "source.js.jsx": {
+    "name": "JavaScript (with React support)",
+    "scopeName": "source.js.jsx",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-javascript-syntaxes-JavaScriptReact.tmLanguage.json"
+  },
+  "source.objc": {
+    "name": "Objective-C",
+    "scopeName": "source.objc",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-objective-c-syntaxes-objective-c.tmLanguage.json"
+  },
+  "source.php": {
+    "name": null,
+    "scopeName": "source.php",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-php-syntaxes-php.tmLanguage.json"
+  },
+  "source.swift": {
+    "name": "Swift",
+    "scopeName": "source.swift",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-swift-syntaxes-swift.tmLanguage.json"
+  },
+  "source.tsx": {
+    "name": "TypeScriptReact",
+    "scopeName": "source.tsx",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-typescript-basics-syntaxes-TypeScriptReact.tmLanguage.json"
+  },
+  "source.objcpp": {
+    "name": "Objective-C++",
+    "scopeName": "source.objcpp",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-objective-c-syntaxes-objective-c++.tmLanguage.json"
+  },
+  "source.ts": {
+    "name": "TypeScript",
+    "scopeName": "source.ts",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-typescript-basics-syntaxes-TypeScript.tmLanguage.json"
+  },
+  "source.cpp.embedded.macro": {
+    "name": "C++",
+    "scopeName": "source.cpp.embedded.macro",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-cpp-syntaxes-cpp.embedded.macro.tmLanguage.json"
+  },
+  "source.cpp": {
+    "name": "C++",
+    "scopeName": "source.cpp",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-cpp-syntaxes-cpp.tmLanguage.json"
+  },
+  "source.jsonnet": {
+    "name": "Jsonnet",
+    "scopeName": "source.jsonnet",
+    "aliases": [
+      "jsonnet",
+      "libjsonnet"
+    ],
+    "grammarFile": "custom/jsonnet.tmLanguage.json"
+  }
+}
