@@ -83,7 +83,7 @@ function* tokenizeInner(source: string, grammar: IGrammar): Generator<Event> {
   }
 }
 
-export const tokenize = async (source: string, lang: string): Promise<Iterator<Event> | null> => {
+export const tokenize = async (source: string, lang: string): Promise<Iterable<Event> | null> => {
   const scopeName = getLang(lang);
   if (!scopeName) return null;
 

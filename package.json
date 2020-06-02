@@ -6,7 +6,8 @@
   "module": "dist/esm/index.js",
   "typings": "dist/cjs/index.d.ts",
   "scripts": {
-    "update-grammars": "ts-node --script-mode ./bin/update-grammars.ts"
+    "update-grammars": "ts-node --script-mode ./bin/update-grammars.ts",
+    "build": "rollup -c"
   },
   "author": "",
   "license": "MIT",
