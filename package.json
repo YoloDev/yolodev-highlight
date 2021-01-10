@@ -14,7 +14,7 @@
   "devDependencies": {
     "@octokit/rest": "17.11.2",
     "@rollup/plugin-node-resolve": "8.0.0",
-    "@types/bent": "7.0.2",
+    "@types/bent": "7.3.2",
     "@types/download": "6.2.4",
     "@types/js-yaml": "3.12.4",
     "@types/json5": "0.0.30",
