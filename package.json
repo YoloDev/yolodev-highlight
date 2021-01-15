@@ -13,7 +13,7 @@
   "license": "MIT",
   "devDependencies": {
     "@octokit/rest": "18.0.12",
-    "@rollup/plugin-node-resolve": "11.0.1",
+    "@rollup/plugin-node-resolve": "11.1.0",
     "@types/bent": "7.3.2",
     "@types/download": "6.2.4",
     "@types/js-yaml": "4.0.0",
