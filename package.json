@@ -21,7 +21,7 @@
     "@types/mkdirp": "1.0.1",
     "@types/prettier": "2.2.3",
     "download": "8.0.0",
-    "js-yaml": "4.0.0",
+    "js-yaml": "4.1.0",
     "json5": "2.2.0",
     "mkdirp": "1.0.4",
     "node-stream-zip": "1.13.3",
