@@ -16,7 +16,7 @@
     "@rollup/plugin-node-resolve": "11.2.1",
     "@types/bent": "7.3.2",
     "@types/download": "6.2.4",
-    "@types/js-yaml": "4.0.0",
+    "@types/js-yaml": "4.0.1",
     "@types/json5": "0.0.30",
     "@types/mkdirp": "1.0.1",
     "@types/prettier": "2.2.3",
