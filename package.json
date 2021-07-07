@@ -18,7 +18,7 @@
     "@types/download": "8.0.0",
     "@types/js-yaml": "4.0.1",
     "@types/json5": "0.0.30",
-    "@types/mkdirp": "1.0.1",
+    "@types/mkdirp": "1.0.2",
     "@types/prettier": "2.3.0",
     "download": "8.0.0",
     "js-yaml": "4.1.0",
