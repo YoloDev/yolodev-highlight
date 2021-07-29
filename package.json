@@ -27,7 +27,7 @@
     "node-stream-zip": "1.13.6",
     "ora": "5.4.1",
     "prettier": "2.3.2",
-    "rollup": "2.55.0",
+    "rollup": "2.55.1",
     "rollup-plugin-string": "3.0.0",
     "rollup-plugin-typescript2": "0.30.0",
     "ts-node": "10.1.0",
