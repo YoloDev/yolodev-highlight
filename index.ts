@@ -1,8 +1,12 @@
-import { IGrammar, INITIAL, IOnigLib, IRawGrammar, Registry, parseRawGrammar } from 'vscode-textmate';
-import { OnigScanner, OnigString, loadWASM } from 'vscode-oniguruma';
+import type { IGrammar, IOnigLib, IRawGrammar } from 'vscode-textmate';
 import { getLang, loadGrammarFile } from './gen/imports';
 
 import trimEnd from 'string.prototype.trimend';
+import vscodeOniguruma from 'vscode-oniguruma';
+import vscodeTextmate from 'vscode-textmate';
+
+const { INITIAL, Registry, parseRawGrammar } = vscodeTextmate;
+const { OnigScanner, OnigString, loadWASM } = vscodeOniguruma;
 
 const loadGrammar = async (scopeName: string): Promise<IRawGrammar | null> => {
   const content = await loadGrammarFile(scopeName);
@@ -18,18 +22,22 @@ const loadOnigLib = () => {
   return (onigLib = (async () => {
     const { default: wasmRaw } = await import('vscode-oniguruma/release/onig.wasm');
 
-    try {
-      await loadWASM(wasmRaw());
-    } catch (e) {}
+    debugger;
+    const buffer = await wasmRaw();
+    await loadWASM(buffer);
+
+    const createOnigScanner = (sources: string[]) =>
+      new OnigScanner(sources) as unknown as import('vscode-textmate').OnigScanner;
+    const createOnigString = (str: string) => new OnigString(str) as import('vscode-textmate').OnigString;
 
     return {
-      createOnigScanner: (sources) => new OnigScanner(sources),
-      createOnigString: (str) => new OnigString(str),
+      createOnigScanner,
+      createOnigString,
     } as IOnigLib;
   })());
 };
 
-let registry: Registry | null = null;
+let registry: import('vscode-textmate').Registry | null = null;
 
 const getRegistry = () => {
   if (registry !== null) return registry;

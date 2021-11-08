@@ -8,61 +8,49 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-bat-syntaxes-batchfile.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.coffee":
+    case "source.dart":
       return import(
-        "../grammars/vscode/extensions-coffeescript-syntaxes-coffeescript.tmLanguage.json"
+        "../grammars/vscode/extensions-dart-syntaxes-dart.tmLanguage.json"
       ).then((m) => m.default);
     case "source.dockerfile":
       return import(
         "../grammars/vscode/extensions-docker-syntaxes-docker.tmLanguage.json"
       ).then((m) => m.default);
+    case "source.coffee":
+      return import(
+        "../grammars/vscode/extensions-coffeescript-syntaxes-coffeescript.tmLanguage.json"
+      ).then((m) => m.default);
     case "source.diff":
       return import(
         "../grammars/vscode/extensions-git-syntaxes-diff.tmLanguage.json"
-      ).then((m) => m.default);
-    case "source.go":
-      return import(
-        "../grammars/vscode/extensions-go-syntaxes-go.tmLanguage.json"
-      ).then((m) => m.default);
-    case "source.ignore":
-      return import(
-        "../grammars/vscode/extensions-git-syntaxes-ignore.tmLanguage.json"
-      ).then((m) => m.default);
-    case "text.git-rebase":
-      return import(
-        "../grammars/vscode/extensions-git-syntaxes-git-rebase.tmLanguage.json"
       ).then((m) => m.default);
     case "text.git-commit":
       return import(
         "../grammars/vscode/extensions-git-syntaxes-git-commit.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.fsharp":
+    case "text.git-rebase":
       return import(
-        "../grammars/vscode/extensions-fsharp-syntaxes-fsharp.tmLanguage.json"
+        "../grammars/vscode/extensions-git-syntaxes-git-rebase.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.groovy":
+    case "source.ignore":
       return import(
-        "../grammars/vscode/extensions-groovy-syntaxes-groovy.tmLanguage.json"
+        "../grammars/vscode/extensions-git-syntaxes-ignore.tmLanguage.json"
       ).then((m) => m.default);
     case "source.hlsl":
       return import(
         "../grammars/vscode/extensions-hlsl-syntaxes-hlsl.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.c":
+    case "source.fsharp":
       return import(
-        "../grammars/vscode/extensions-cpp-syntaxes-c.tmLanguage.json"
+        "../grammars/vscode/extensions-fsharp-syntaxes-fsharp.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.c.platform":
+    case "source.go":
       return import(
-        "../grammars/vscode/extensions-cpp-syntaxes-platform.tmLanguage.json"
+        "../grammars/vscode/extensions-go-syntaxes-go.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.css":
+    case "source.groovy":
       return import(
-        "../grammars/vscode/extensions-css-syntaxes-css.tmLanguage.json"
-      ).then((m) => m.default);
-    case "source.cs":
-      return import(
-        "../grammars/vscode/extensions-csharp-syntaxes-csharp.tmLanguage.json"
+        "../grammars/vscode/extensions-groovy-syntaxes-groovy.tmLanguage.json"
       ).then((m) => m.default);
     case "text.html.handlebars":
       return import(
@@ -76,6 +64,18 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-ini-syntaxes-ini.tmLanguage.json"
       ).then((m) => m.default);
+    case "source.jupyter":
+      return import(
+        "../grammars/vscode/extensions-ipynb-syntaxes-jupyter.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.c":
+      return import(
+        "../grammars/vscode/extensions-cpp-syntaxes-c.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.css":
+      return import(
+        "../grammars/vscode/extensions-css-syntaxes-css.tmLanguage.json"
+      ).then((m) => m.default);
     case "source.json":
       return import(
         "../grammars/vscode/extensions-json-syntaxes-JSON.tmLanguage.json"
@@ -83,6 +83,10 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
     case "source.json.comments":
       return import(
         "../grammars/vscode/extensions-json-syntaxes-JSONC.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.css.less":
+      return import(
+        "../grammars/vscode/extensions-less-syntaxes-less.tmLanguage.json"
       ).then((m) => m.default);
     case "text.log":
       return import(
@@ -96,25 +100,33 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-make-syntaxes-make.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.css.less":
+    case "source.cs":
       return import(
-        "../grammars/vscode/extensions-less-syntaxes-less.tmLanguage.json"
+        "../grammars/vscode/extensions-csharp-syntaxes-csharp.tmLanguage.json"
       ).then((m) => m.default);
     case "source.java":
       return import(
         "../grammars/vscode/extensions-java-syntaxes-java.tmLanguage.json"
       ).then((m) => m.default);
+    case "markdown.math.block":
+      return import(
+        "../grammars/vscode/extensions-markdown-math-syntaxes-md-math-block.tmLanguage.json"
+      ).then((m) => m.default);
+    case "markdown.math.inline":
+      return import(
+        "../grammars/vscode/extensions-markdown-math-syntaxes-md-math-inline.tmLanguage.json"
+      ).then((m) => m.default);
+    case "text.html.markdown.math":
+      return import(
+        "../grammars/vscode/extensions-markdown-math-syntaxes-md-math.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.julia":
+      return import(
+        "../grammars/vscode/extensions-julia-syntaxes-julia.tmLanguage.json"
+      ).then((m) => m.default);
     case "source.perl.6":
       return import(
         "../grammars/vscode/extensions-perl-syntaxes-perl6.tmLanguage.json"
-      ).then((m) => m.default);
-    case "text.html.basic":
-      return import(
-        "../grammars/vscode/extensions-html-syntaxes-html.tmLanguage.json"
-      ).then((m) => m.default);
-    case "text.html.markdown":
-      return import(
-        "../grammars/vscode/extensions-markdown-basics-syntaxes-markdown.tmLanguage.json"
       ).then((m) => m.default);
     case "text.html.php":
       return import(
@@ -136,10 +148,6 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-razor-syntaxes-cshtml.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.rust":
-      return import(
-        "../grammars/vscode/extensions-rust-syntaxes-rust.tmLanguage.json"
-      ).then((m) => m.default);
     case "source.sassdoc":
       return import(
         "../grammars/vscode/extensions-scss-syntaxes-sassdoc.tmLanguage.json"
@@ -148,13 +156,17 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-shaderlab-syntaxes-shaderlab.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.perl":
+    case "text.html.basic":
       return import(
-        "../grammars/vscode/extensions-perl-syntaxes-perl.tmLanguage.json"
+        "../grammars/vscode/extensions-html-syntaxes-html.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.r":
+    case "text.html.markdown":
       return import(
-        "../grammars/vscode/extensions-r-syntaxes-r.tmLanguage.json"
+        "../grammars/vscode/extensions-markdown-basics-syntaxes-markdown.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.rust":
+      return import(
+        "../grammars/vscode/extensions-rust-syntaxes-rust.tmLanguage.json"
       ).then((m) => m.default);
     case "source.shell":
       return import(
@@ -164,41 +176,49 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-sql-syntaxes-sql.tmLanguage.json"
       ).then((m) => m.default);
+    case "documentation.injection.js.jsx":
+      return import(
+        "../grammars/vscode/extensions-typescript-basics-syntaxes-jsdoc.js.injection.tmLanguage.json"
+      ).then((m) => m.default);
+    case "documentation.injection.ts":
+      return import(
+        "../grammars/vscode/extensions-typescript-basics-syntaxes-jsdoc.ts.injection.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.perl":
+      return import(
+        "../grammars/vscode/extensions-perl-syntaxes-perl.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.r":
+      return import(
+        "../grammars/vscode/extensions-r-syntaxes-r.tmLanguage.json"
+      ).then((m) => m.default);
     case "source.css.scss":
       return import(
         "../grammars/vscode/extensions-scss-syntaxes-scss.tmLanguage.json"
-      ).then((m) => m.default);
-    case "documentation.injection":
-      return import(
-        "../grammars/vscode/extensions-typescript-basics-syntaxes-jsdoc.injection.tmLanguage.json"
       ).then((m) => m.default);
     case "source.ruby":
       return import(
         "../grammars/vscode/extensions-ruby-syntaxes-ruby.tmLanguage.json"
       ).then((m) => m.default);
-    case "text.xml.xsl":
-      return import(
-        "../grammars/vscode/extensions-xml-syntaxes-xsl.tmLanguage.json"
-      ).then((m) => m.default);
     case "text.xml":
       return import(
         "../grammars/vscode/extensions-xml-syntaxes-xml.tmLanguage.json"
+      ).then((m) => m.default);
+    case "text.xml.xsl":
+      return import(
+        "../grammars/vscode/extensions-xml-syntaxes-xsl.tmLanguage.json"
       ).then((m) => m.default);
     case "source.python":
       return import(
         "../grammars/vscode/extensions-python-syntaxes-MagicPython.tmLanguage.json"
       ).then((m) => m.default);
+    case "source.swift":
+      return import(
+        "../grammars/vscode/extensions-swift-syntaxes-swift.tmLanguage.json"
+      ).then((m) => m.default);
     case "source.yaml":
       return import(
         "../grammars/vscode/extensions-yaml-syntaxes-yaml.tmLanguage.json"
-      ).then((m) => m.default);
-    case "source.js":
-      return import(
-        "../grammars/vscode/extensions-javascript-syntaxes-JavaScript.tmLanguage.json"
-      ).then((m) => m.default);
-    case "source.js.jsx":
-      return import(
-        "../grammars/vscode/extensions-javascript-syntaxes-JavaScriptReact.tmLanguage.json"
       ).then((m) => m.default);
     case "source.objc":
       return import(
@@ -208,13 +228,21 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-php-syntaxes-php.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.swift":
+    case "text.searchResult":
       return import(
-        "../grammars/vscode/extensions-swift-syntaxes-swift.tmLanguage.json"
+        "../grammars/vscode/extensions-search-result-syntaxes-searchResult.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.tsx":
+    case "source.js":
       return import(
-        "../grammars/vscode/extensions-typescript-basics-syntaxes-TypeScriptReact.tmLanguage.json"
+        "../grammars/vscode/extensions-javascript-syntaxes-JavaScript.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.js.jsx":
+      return import(
+        "../grammars/vscode/extensions-javascript-syntaxes-JavaScriptReact.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.cpp.embedded.macro":
+      return import(
+        "../grammars/vscode/extensions-cpp-syntaxes-cpp.embedded.macro.tmLanguage.json"
       ).then((m) => m.default);
     case "source.objcpp":
       return import(
@@ -224,13 +252,21 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-typescript-basics-syntaxes-TypeScript.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.cpp.embedded.macro":
+    case "source.tsx":
       return import(
-        "../grammars/vscode/extensions-cpp-syntaxes-cpp.embedded.macro.tmLanguage.json"
+        "../grammars/vscode/extensions-typescript-basics-syntaxes-TypeScriptReact.tmLanguage.json"
       ).then((m) => m.default);
     case "source.cpp":
       return import(
         "../grammars/vscode/extensions-cpp-syntaxes-cpp.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.cuda-cpp":
+      return import(
+        "../grammars/vscode/extensions-cpp-syntaxes-cuda-cpp.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.c.platform":
+      return import(
+        "../grammars/vscode/extensions-cpp-syntaxes-platform.tmLanguage.json"
       ).then((m) => m.default);
     case "source.jsonnet":
       return import("../grammars/custom/jsonnet.tmLanguage.json").then(
@@ -246,20 +282,22 @@ export const getLang = (lang: string): string | null => {
       return "source.clojure";
     case "source.batchfile":
       return "source.batchfile";
-    case "source.coffee":
-      return "source.coffee";
+    case "source.dart":
+      return "source.dart";
     case "source.dockerfile":
       return "source.dockerfile";
+    case "source.coffee":
+      return "source.coffee";
     case "source.diff":
       return "source.diff";
-    case "source.go":
-      return "source.go";
-    case "source.ignore":
-      return "source.ignore";
-    case "text.git-rebase":
-      return "text.git-rebase";
     case "text.git-commit":
       return "text.git-commit";
+    case "text.git-rebase":
+      return "text.git-rebase";
+    case "source.ignore":
+      return "source.ignore";
+    case "source.hlsl":
+      return "source.hlsl";
     case "source.fsharp":
       return "source.fsharp";
     case "fsharp":
@@ -268,16 +306,36 @@ export const getLang = (lang: string): string | null => {
       return "source.fsharp";
     case "fs":
       return "source.fsharp";
+    case "source.go":
+      return "source.go";
     case "source.groovy":
       return "source.groovy";
-    case "source.hlsl":
-      return "source.hlsl";
+    case "text.html.handlebars":
+      return "text.html.handlebars";
+    case "text.html.derivative":
+      return "text.html.derivative";
+    case "source.ini":
+      return "source.ini";
+    case "source.jupyter":
+      return "source.jupyter";
     case "source.c":
       return "source.c";
-    case "source.c.platform":
-      return "source.c.platform";
     case "source.css":
       return "source.css";
+    case "source.json":
+      return "source.json";
+    case "json":
+      return "source.json";
+    case "source.json.comments":
+      return "source.json.comments";
+    case "source.css.less":
+      return "source.css.less";
+    case "text.log":
+      return "text.log";
+    case "source.lua":
+      return "source.lua";
+    case "source.makefile":
+      return "source.makefile";
     case "source.cs":
       return "source.cs";
     case "c#":
@@ -286,38 +344,18 @@ export const getLang = (lang: string): string | null => {
       return "source.cs";
     case "dotnet":
       return "source.cs";
-    case "text.html.handlebars":
-      return "text.html.handlebars";
-    case "text.html.derivative":
-      return "text.html.derivative";
-    case "source.ini":
-      return "source.ini";
-    case "source.json":
-      return "source.json";
-    case "json":
-      return "source.json";
-    case "source.json.comments":
-      return "source.json.comments";
-    case "text.log":
-      return "text.log";
-    case "source.lua":
-      return "source.lua";
-    case "source.makefile":
-      return "source.makefile";
-    case "source.css.less":
-      return "source.css.less";
     case "source.java":
       return "source.java";
+    case "markdown.math.block":
+      return "markdown.math.block";
+    case "markdown.math.inline":
+      return "markdown.math.inline";
+    case "text.html.markdown.math":
+      return "text.html.markdown.math";
+    case "source.julia":
+      return "source.julia";
     case "source.perl.6":
       return "source.perl.6";
-    case "text.html.basic":
-      return "text.html.basic";
-    case "text.html.markdown":
-      return "text.html.markdown";
-    case "markdown":
-      return "text.html.markdown";
-    case "md":
-      return "text.html.markdown";
     case "text.html.php":
       return "text.html.php";
     case "source.regexp.python":
@@ -328,56 +366,72 @@ export const getLang = (lang: string): string | null => {
       return "text.pug";
     case "text.html.cshtml":
       return "text.html.cshtml";
-    case "source.rust":
-      return "source.rust";
-    case "rust":
-      return "source.rust";
     case "source.sassdoc":
       return "source.sassdoc";
     case "source.shaderlab":
       return "source.shaderlab";
-    case "source.perl":
-      return "source.perl";
-    case "source.r":
-      return "source.r";
+    case "text.html.basic":
+      return "text.html.basic";
+    case "text.html.markdown":
+      return "text.html.markdown";
+    case "markdown":
+      return "text.html.markdown";
+    case "md":
+      return "text.html.markdown";
+    case "source.rust":
+      return "source.rust";
+    case "rust":
+      return "source.rust";
     case "source.shell":
       return "source.shell";
     case "source.sql":
       return "source.sql";
+    case "documentation.injection.js.jsx":
+      return "documentation.injection.js.jsx";
+    case "documentation.injection.ts":
+      return "documentation.injection.ts";
+    case "source.perl":
+      return "source.perl";
+    case "source.r":
+      return "source.r";
     case "source.css.scss":
       return "source.css.scss";
-    case "documentation.injection":
-      return "documentation.injection";
     case "source.ruby":
       return "source.ruby";
-    case "text.xml.xsl":
-      return "text.xml.xsl";
     case "text.xml":
       return "text.xml";
+    case "text.xml.xsl":
+      return "text.xml.xsl";
     case "source.python":
       return "source.python";
+    case "source.swift":
+      return "source.swift";
     case "source.yaml":
       return "source.yaml";
-    case "source.js":
-      return "source.js";
-    case "source.js.jsx":
-      return "source.js.jsx";
     case "source.objc":
       return "source.objc";
     case "source.php":
       return "source.php";
-    case "source.swift":
-      return "source.swift";
-    case "source.tsx":
-      return "source.tsx";
+    case "text.searchResult":
+      return "text.searchResult";
+    case "source.js":
+      return "source.js";
+    case "source.js.jsx":
+      return "source.js.jsx";
+    case "source.cpp.embedded.macro":
+      return "source.cpp.embedded.macro";
     case "source.objcpp":
       return "source.objcpp";
     case "source.ts":
       return "source.ts";
-    case "source.cpp.embedded.macro":
-      return "source.cpp.embedded.macro";
+    case "source.tsx":
+      return "source.tsx";
     case "source.cpp":
       return "source.cpp";
+    case "source.cuda-cpp":
+      return "source.cuda-cpp";
+    case "source.c.platform":
+      return "source.c.platform";
     case "source.jsonnet":
       return "source.jsonnet";
     case "jsonnet":

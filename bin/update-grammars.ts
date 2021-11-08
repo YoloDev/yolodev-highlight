@@ -9,7 +9,10 @@ import json5 from 'json5';
 import mkdirp from 'mkdirp';
 import path from 'path';
 import prettier from 'prettier';
+import url from 'url';
 import yaml from 'js-yaml';
+
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 type Grammar = {
   readonly name: string | null;
@@ -89,18 +92,18 @@ const main = async (spinner: Ora) => {
 
   const dlPath = release.data.zipball_url;
   const targetDir = path.resolve(__dirname, '..', 'dl');
-  const target = path.resolve(targetDir, path.basename(dlPath) + '.zip');
+  const target = path.resolve(targetDir, path.basename(dlPath!) + '.zip');
 
-  // try {
-  //   await fs.access(target, F_OK);
-  //   spinner.succeed('already up to date');
-  // } catch (e) {}
+  try {
+    await fs.access(target, F_OK);
+    spinner.succeed('already up to date');
+  } catch (e) {}
 
-  // spinner.start('downloading release');
-  // await download(dlPath, targetDir, {
-  //   filename: path.basename(dlPath) + '.zip',
-  // });
-  // spinner.succeed();
+  spinner.start('downloading release');
+  await download(dlPath!, targetDir, {
+    filename: path.basename(dlPath!) + '.zip',
+  });
+  spinner.succeed();
 
   spinner.start('unpacking grammars');
   const grammarsDir = path.resolve(__dirname, '..', 'grammars');
@@ -137,7 +140,7 @@ const main = async (spinner: Ora) => {
   }
 
   const aliasesSouce = await fs.readFile(path.resolve(grammarsDir, 'aliases.yaml'), 'utf-8');
-  const aliases = yaml.safeLoad(aliasesSouce);
+  const aliases = yaml.load(aliasesSouce) as object;
   for (const [sourceScope, sourceAliases] of Object.entries(aliases)) {
     const source = grammars[sourceScope];
     if (!source) {

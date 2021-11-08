@@ -2,7 +2,7 @@
   "compilerOptions": {
     "strict": true,
     "moduleResolution": "node",
-    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": false,
     "target": "ES2017",
     "lib": ["ES2017"],

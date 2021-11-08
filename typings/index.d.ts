@@ -1,14 +1,34 @@
 declare module '*.tmLanguage.json' {
   const text: string;
-  export = text;
+  export default text;
 }
 
 declare module '*.wasm' {
-  const getRaw: () => ArrayBuffer;
-  export = getRaw;
+  const getRaw: () => Promise<ArrayBuffer>;
+  export default getRaw;
 }
 
 declare module 'string.prototype.trimend' {
   const trimEnd: (source: string) => string;
-  export = trimEnd;
+  export default trimEnd;
+}
+
+declare module 'vscode-oniguruma' {
+  import * as m from 'vscode-oniguruma/main';
+
+  export default m;
+}
+
+declare module 'vscode-textmate' {
+  import * as m from 'vscode-textmate/release/main';
+
+  export default m;
+  export type {
+    IGrammar,
+    IOnigLib,
+    IRawGrammar,
+    Registry,
+    OnigScanner,
+    OnigString,
+  } from 'vscode-textmate/release/main';
 }
