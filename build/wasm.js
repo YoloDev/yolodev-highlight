@@ -29,18 +29,16 @@ export const wasm = (options) => {
       }
 
       return Promise.all([fs.promises.stat(id), fs.promises.readFile(id)]).then(([stats, buffer]) => {
-        if ((maxFileSize && stats.size > maxFileSize) || maxFileSize === 0) {
-          const hash = createHash('sha1').update(buffer).digest('hex').substr(0, 16);
-
-          const filename = `${hash}.wasm`;
-          const publicFilepath = `${publicPath}${filename}`;
-
-          copies[id] = {
-            filename,
-            publicFilepath,
-            buffer,
-          };
-        }
+        // if ((maxFileSize && stats.size > maxFileSize) || maxFileSize === 0) {
+        //   // const hash = createHash('sha1').update(buffer).digest('hex').substr(0, 16);
+        //   // const filename = `${hash}.wasm`;
+        //   // const publicFilepath = `${publicPath}${filename}`;
+        //   // copies[id] = {
+        //   //   filename,
+        //   //   publicFilepath,
+        //   //   buffer,
+        //   // };
+        // }
 
         return buffer.toString('binary');
       });
@@ -51,12 +49,8 @@ export const wasm = (options) => {
         const publicFilepath = copies[id] ? `'${copies[id].publicFilepath}'` : null;
         let src;
 
-        if (publicFilepath === null) {
-          src = Buffer.from(code, 'binary').toString('base64');
-          src = `'${src}'`;
-        } else {
-          src = null;
-        }
+        src = Buffer.from(code, 'binary').toString('base64');
+        src = `'${src}'`;
 
         return {
           map: {

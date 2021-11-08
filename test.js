@@ -1,10 +1,9 @@
 import assert from 'assert';
 
-const main = async () => {
+const js = async () => {
   const mod = await import('./dist/esm/index.js');
   const iter = await mod.tokenize('{}', 'json');
   assert(iter != null, 'got iter');
-  debugger;
   assert.deepStrictEqual(iter.next(), { done: false, value: { scope: 'source.json', type: 'start' } });
   assert.deepStrictEqual(iter.next(), {
     done: false,
@@ -58,6 +57,29 @@ const main = async () => {
     done: true,
     value: void 0,
   });
+};
+
+const rust = async () => {
+  const mod = await import('./dist/esm/index.js');
+  const code = `impl Parse for ArgNamed {
+  fn parse(input: ParseStream) -> Result<Self> {
+    Ok(ArgNamed {
+      name: input.parse()?,
+      assign_token: input.parse()?,
+      value: input.parse()?,
+    })
+  }
+}
+`;
+
+  const iter = await mod.tokenize('{}', 'rust');
+  for (const tok of iter) {
+  }
+};
+
+const main = async () => {
+  await js();
+  await rust();
 };
 
 main()
