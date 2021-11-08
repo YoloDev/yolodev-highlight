@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.1](https://www.github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.0...highlight-v0.2.1) (2021-11-08)
+
+
+### Bug Fixes
+
+* remove debugger statement ([b17de44](https://www.github.com/YoloDev/yolodev-highlight/commit/b17de4475c3a0738e0c4b608317666a2797ad620))
+
 ## 0.2.0 (2021-11-08)
 
 
