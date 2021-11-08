@@ -22,7 +22,6 @@ const loadOnigLib = () => {
   return (onigLib = (async () => {
     const { default: wasmRaw } = await import('vscode-oniguruma/release/onig.wasm');
 
-    debugger;
     const buffer = await wasmRaw();
     await loadWASM(buffer);
 
@@ -39,10 +38,11 @@ const loadOnigLib = () => {
 
 let registry: import('vscode-textmate').Registry | null = null;
 
-const getRegistry = () => {
+const getRegistry = async () => {
   if (registry !== null) return registry;
+  const onigLib = await loadOnigLib();
   return (registry = new Registry({
-    onigLib: loadOnigLib(),
+    onigLib: Promise.resolve(onigLib),
     loadGrammar: loadGrammar,
   }));
 };
@@ -95,7 +95,8 @@ export const tokenize = async (source: string, lang: string): Promise<Iterable<E
   const scopeName = getLang(lang);
   if (!scopeName) return null;
 
-  const grammar = await getRegistry().loadGrammar(scopeName);
+  const registry = await getRegistry();
+  const grammar = await registry.loadGrammar(scopeName);
   if (!grammar) return null;
 
   return tokenizeInner(source, grammar);
