@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.2](https://www.github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.1...highlight-v0.2.2) (2021-11-08)
+
+
+### Bug Fixes
+
+* inline wasm ([e1650cf](https://www.github.com/YoloDev/yolodev-highlight/commit/e1650cfb3d1f82054177def1db2a9fdcee7d00de))
+
 ### [0.2.1](https://www.github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.0...highlight-v0.2.1) (2021-11-08)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@yolodev/highlight",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Code highlighter using the vscode highlighting engine",
   "type": "module",
   "main": "dist/esm/index.js",
