@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.3](https://www.github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.2...highlight-v0.2.3) (2021-11-08)
+
+
+### Dependencies
+
+* update dependencies ([51172e8](https://www.github.com/YoloDev/yolodev-highlight/commit/51172e831600b3b13fce409ce2785f76b805df30))
+
 ### [0.2.2](https://www.github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.1...highlight-v0.2.2) (2021-11-08)
 
 
