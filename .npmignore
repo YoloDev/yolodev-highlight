@@ -11,3 +11,15 @@ false/
 dl/
 dist/
 test.js
+.editorconfig
+.release-please-manifest.json
+CHANGELOG.md
+index.ts
+release-please-config.json
+renovate.json
+rollup.config.json
+grammars
+gen
+build
+bin
+.github
