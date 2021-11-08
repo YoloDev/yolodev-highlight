@@ -12,7 +12,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@octokit/rest": "18.10.0",
+    "@octokit/rest": "18.12.0",
     "@rollup/plugin-node-resolve": "13.0.6",
     "@types/bent": "7.3.2",
     "@types/download": "8.0.1",
