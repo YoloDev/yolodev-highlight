@@ -25,8 +25,7 @@ const loadOnigLib = () => {
     const buffer = await wasmRaw();
     await loadWASM(buffer);
 
-    const createOnigScanner = (sources: string[]) =>
-      new OnigScanner(sources) as unknown as import('vscode-textmate').OnigScanner;
+    const createOnigScanner = (sources: string[]) => new OnigScanner(sources) as import('vscode-textmate').OnigScanner;
     const createOnigString = (str: string) => new OnigString(str) as import('vscode-textmate').OnigString;
 
     return {
