@@ -232,13 +232,13 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-search-result-syntaxes-searchResult.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.js":
-      return import(
-        "../grammars/vscode/extensions-javascript-syntaxes-JavaScript.tmLanguage.json"
-      ).then((m) => m.default);
     case "source.js.jsx":
       return import(
         "../grammars/vscode/extensions-javascript-syntaxes-JavaScriptReact.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.js":
+      return import(
+        "../grammars/vscode/extensions-javascript-syntaxes-JavaScript.tmLanguage.json"
       ).then((m) => m.default);
     case "source.cpp.embedded.macro":
       return import(
@@ -414,10 +414,10 @@ export const getLang = (lang: string): string | null => {
       return "source.php";
     case "text.searchResult":
       return "text.searchResult";
-    case "source.js":
-      return "source.js";
     case "source.js.jsx":
       return "source.js.jsx";
+    case "source.js":
+      return "source.js";
     case "source.cpp.embedded.macro":
       return "source.cpp.embedded.macro";
     case "source.objcpp":

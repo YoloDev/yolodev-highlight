@@ -362,17 +362,17 @@
     "aliases": [],
     "grammarFile": "vscode/extensions-search-result-syntaxes-searchResult.tmLanguage.json"
   },
-  "source.js": {
-    "name": "JavaScript (with React support)",
-    "scopeName": "source.js",
-    "aliases": [],
-    "grammarFile": "vscode/extensions-javascript-syntaxes-JavaScript.tmLanguage.json"
-  },
   "source.js.jsx": {
     "name": "JavaScript (with React support)",
     "scopeName": "source.js.jsx",
     "aliases": [],
     "grammarFile": "vscode/extensions-javascript-syntaxes-JavaScriptReact.tmLanguage.json"
+  },
+  "source.js": {
+    "name": "JavaScript (with React support)",
+    "scopeName": "source.js",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-javascript-syntaxes-JavaScript.tmLanguage.json"
   },
   "source.cpp.embedded.macro": {
     "name": "C++",
