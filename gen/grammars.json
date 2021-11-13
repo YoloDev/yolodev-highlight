@@ -29,12 +29,6 @@
     "aliases": [],
     "grammarFile": "vscode/extensions-coffeescript-syntaxes-coffeescript.tmLanguage.json"
   },
-  "source.diff": {
-    "name": "Diff",
-    "scopeName": "source.diff",
-    "aliases": [],
-    "grammarFile": "vscode/extensions-git-syntaxes-diff.tmLanguage.json"
-  },
   "text.git-commit": {
     "name": "Git Commit Message",
     "scopeName": "text.git-commit",
@@ -52,6 +46,12 @@
     "scopeName": "source.ignore",
     "aliases": [],
     "grammarFile": "vscode/extensions-git-syntaxes-ignore.tmLanguage.json"
+  },
+  "source.diff": {
+    "name": "Diff",
+    "scopeName": "source.diff",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-git-syntaxes-diff.tmLanguage.json"
   },
   "source.hlsl": {
     "name": "HLSL",
@@ -272,12 +272,6 @@
     "aliases": [],
     "grammarFile": "vscode/extensions-shellscript-syntaxes-shell-unix-bash.tmLanguage.json"
   },
-  "source.sql": {
-    "name": "SQL",
-    "scopeName": "source.sql",
-    "aliases": [],
-    "grammarFile": "vscode/extensions-sql-syntaxes-sql.tmLanguage.json"
-  },
   "documentation.injection.js.jsx": {
     "name": null,
     "scopeName": "documentation.injection.js.jsx",
@@ -289,6 +283,12 @@
     "scopeName": "documentation.injection.ts",
     "aliases": [],
     "grammarFile": "vscode/extensions-typescript-basics-syntaxes-jsdoc.ts.injection.tmLanguage.json"
+  },
+  "source.sql": {
+    "name": "SQL",
+    "scopeName": "source.sql",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-sql-syntaxes-sql.tmLanguage.json"
   },
   "source.perl": {
     "name": "Perl",
@@ -362,17 +362,17 @@
     "aliases": [],
     "grammarFile": "vscode/extensions-search-result-syntaxes-searchResult.tmLanguage.json"
   },
-  "source.js.jsx": {
-    "name": "JavaScript (with React support)",
-    "scopeName": "source.js.jsx",
-    "aliases": [],
-    "grammarFile": "vscode/extensions-javascript-syntaxes-JavaScriptReact.tmLanguage.json"
-  },
   "source.js": {
     "name": "JavaScript (with React support)",
     "scopeName": "source.js",
     "aliases": [],
     "grammarFile": "vscode/extensions-javascript-syntaxes-JavaScript.tmLanguage.json"
+  },
+  "source.js.jsx": {
+    "name": "JavaScript (with React support)",
+    "scopeName": "source.js.jsx",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-javascript-syntaxes-JavaScriptReact.tmLanguage.json"
   },
   "source.cpp.embedded.macro": {
     "name": "C++",

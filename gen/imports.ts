@@ -20,10 +20,6 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-coffeescript-syntaxes-coffeescript.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.diff":
-      return import(
-        "../grammars/vscode/extensions-git-syntaxes-diff.tmLanguage.json"
-      ).then((m) => m.default);
     case "text.git-commit":
       return import(
         "../grammars/vscode/extensions-git-syntaxes-git-commit.tmLanguage.json"
@@ -35,6 +31,10 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
     case "source.ignore":
       return import(
         "../grammars/vscode/extensions-git-syntaxes-ignore.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.diff":
+      return import(
+        "../grammars/vscode/extensions-git-syntaxes-diff.tmLanguage.json"
       ).then((m) => m.default);
     case "source.hlsl":
       return import(
@@ -172,10 +172,6 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-shellscript-syntaxes-shell-unix-bash.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.sql":
-      return import(
-        "../grammars/vscode/extensions-sql-syntaxes-sql.tmLanguage.json"
-      ).then((m) => m.default);
     case "documentation.injection.js.jsx":
       return import(
         "../grammars/vscode/extensions-typescript-basics-syntaxes-jsdoc.js.injection.tmLanguage.json"
@@ -183,6 +179,10 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
     case "documentation.injection.ts":
       return import(
         "../grammars/vscode/extensions-typescript-basics-syntaxes-jsdoc.ts.injection.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.sql":
+      return import(
+        "../grammars/vscode/extensions-sql-syntaxes-sql.tmLanguage.json"
       ).then((m) => m.default);
     case "source.perl":
       return import(
@@ -232,13 +232,13 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-search-result-syntaxes-searchResult.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.js.jsx":
-      return import(
-        "../grammars/vscode/extensions-javascript-syntaxes-JavaScriptReact.tmLanguage.json"
-      ).then((m) => m.default);
     case "source.js":
       return import(
         "../grammars/vscode/extensions-javascript-syntaxes-JavaScript.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.js.jsx":
+      return import(
+        "../grammars/vscode/extensions-javascript-syntaxes-JavaScriptReact.tmLanguage.json"
       ).then((m) => m.default);
     case "source.cpp.embedded.macro":
       return import(
@@ -288,14 +288,14 @@ export const getLang = (lang: string): string | null => {
       return "source.dockerfile";
     case "source.coffee":
       return "source.coffee";
-    case "source.diff":
-      return "source.diff";
     case "text.git-commit":
       return "text.git-commit";
     case "text.git-rebase":
       return "text.git-rebase";
     case "source.ignore":
       return "source.ignore";
+    case "source.diff":
+      return "source.diff";
     case "source.hlsl":
       return "source.hlsl";
     case "source.fsharp":
@@ -384,12 +384,12 @@ export const getLang = (lang: string): string | null => {
       return "source.rust";
     case "source.shell":
       return "source.shell";
-    case "source.sql":
-      return "source.sql";
     case "documentation.injection.js.jsx":
       return "documentation.injection.js.jsx";
     case "documentation.injection.ts":
       return "documentation.injection.ts";
+    case "source.sql":
+      return "source.sql";
     case "source.perl":
       return "source.perl";
     case "source.r":
@@ -414,10 +414,10 @@ export const getLang = (lang: string): string | null => {
       return "source.php";
     case "text.searchResult":
       return "text.searchResult";
-    case "source.js.jsx":
-      return "source.js.jsx";
     case "source.js":
       return "source.js";
+    case "source.js.jsx":
+      return "source.js.jsx";
     case "source.cpp.embedded.macro":
       return "source.cpp.embedded.macro";
     case "source.objcpp":
