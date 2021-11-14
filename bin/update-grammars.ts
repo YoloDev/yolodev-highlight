@@ -156,13 +156,18 @@ const main = async (spinner: Ora) => {
     }
   }
 
-  await fs.writeFile(path.resolve(genDir, 'grammars.json'), JSON.stringify(grammars, void 0, 2));
+  const sorted: Grammars = {};
+  for (const [name, value] of Object.entries(grammars).sort(([aName], [bName]) => (aName < bName ? -1 : 1))) {
+    sorted[name] = value;
+  }
+
+  await fs.writeFile(path.resolve(genDir, 'grammars.json'), JSON.stringify(sorted, void 0, 2));
   spinner.succeed();
 
   spinner.start('generate code');
   const importCases: string[] = [];
   const getLangCases: string[] = [];
-  for (const [sourceScope, grammar] of Object.entries(grammars)) {
+  for (const [sourceScope, grammar] of Object.entries(grammars).sort(([aName], [bName]) => (aName < bName ? -1 : 1))) {
     if (!grammar) continue;
     importCases.push(
       `case '${sourceScope}': return import('../grammars/${grammar.grammarFile}').then(m => m.default);`,
