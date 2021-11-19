@@ -19,7 +19,7 @@
     "@rollup/plugin-wasm": "5.1.2",
     "@types/bent": "7.3.2",
     "@types/download": "8.0.1",
-    "@types/js-yaml": "4.0.4",
+    "@types/js-yaml": "4.0.5",
     "@types/json5": "2.2.0",
     "@types/mkdirp": "1.0.2",
     "@types/prettier": "2.4.2",
