@@ -70,7 +70,7 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       ).then((m) => m.default);
     case "source.diff":
       return import(
-        "../grammars/vscode/extensions-git-syntaxes-diff.tmLanguage.json"
+        "../grammars/vscode/extensions-diff-syntaxes-diff.tmLanguage.json"
       ).then((m) => m.default);
     case "source.dockerfile":
       return import(
@@ -94,7 +94,7 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       ).then((m) => m.default);
     case "source.ignore":
       return import(
-        "../grammars/vscode/extensions-git-syntaxes-ignore.tmLanguage.json"
+        "../grammars/vscode/extensions-git-base-syntaxes-ignore.tmLanguage.json"
       ).then((m) => m.default);
     case "source.ini":
       return import(
@@ -218,11 +218,11 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       ).then((m) => m.default);
     case "text.git-commit":
       return import(
-        "../grammars/vscode/extensions-git-syntaxes-git-commit.tmLanguage.json"
+        "../grammars/vscode/extensions-git-base-syntaxes-git-commit.tmLanguage.json"
       ).then((m) => m.default);
     case "text.git-rebase":
       return import(
-        "../grammars/vscode/extensions-git-syntaxes-git-rebase.tmLanguage.json"
+        "../grammars/vscode/extensions-git-base-syntaxes-git-rebase.tmLanguage.json"
       ).then((m) => m.default);
     case "text.html.basic":
       return import(
