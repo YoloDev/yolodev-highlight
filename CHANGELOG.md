@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.2.4](https://www.github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.3...highlight-v0.2.4) (2021-12-09)
+
+
+### Dependencies
+
+* **grammars:** update grammars ([#168](https://www.github.com/YoloDev/yolodev-highlight/issues/168)) ([c6e521b](https://www.github.com/YoloDev/yolodev-highlight/commit/c6e521b86300cdafab23cb7972328c71fe14ddb2))
+* **grammars:** update grammars ([#182](https://www.github.com/YoloDev/yolodev-highlight/issues/182)) ([2156399](https://www.github.com/YoloDev/yolodev-highlight/commit/2156399251226758ebab1f83321a450e3edfac80))
+
 ### [0.2.3](https://www.github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.2...highlight-v0.2.3) (2021-11-08)
 
 
