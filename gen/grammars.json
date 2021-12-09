@@ -109,7 +109,7 @@
     "name": "Diff",
     "scopeName": "source.diff",
     "aliases": [],
-    "grammarFile": "vscode/extensions-git-syntaxes-diff.tmLanguage.json"
+    "grammarFile": "vscode/extensions-diff-syntaxes-diff.tmLanguage.json"
   },
   "source.dockerfile": {
     "name": "Dockerfile",
@@ -149,7 +149,7 @@
     "name": "Ignore",
     "scopeName": "source.ignore",
     "aliases": [],
-    "grammarFile": "vscode/extensions-git-syntaxes-ignore.tmLanguage.json"
+    "grammarFile": "vscode/extensions-git-base-syntaxes-ignore.tmLanguage.json"
   },
   "source.ini": {
     "name": "Ini",
@@ -342,13 +342,13 @@
     "name": "Git Commit Message",
     "scopeName": "text.git-commit",
     "aliases": [],
-    "grammarFile": "vscode/extensions-git-syntaxes-git-commit.tmLanguage.json"
+    "grammarFile": "vscode/extensions-git-base-syntaxes-git-commit.tmLanguage.json"
   },
   "text.git-rebase": {
     "name": "Git Rebase Message",
     "scopeName": "text.git-rebase",
     "aliases": [],
-    "grammarFile": "vscode/extensions-git-syntaxes-git-rebase.tmLanguage.json"
+    "grammarFile": "vscode/extensions-git-base-syntaxes-git-rebase.tmLanguage.json"
   },
   "text.html.basic": {
     "name": "HTML",
