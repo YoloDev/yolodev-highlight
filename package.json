@@ -40,6 +40,6 @@
     "string.prototype.trimend": "^1.0.4",
     "tslib": "^2.3.1",
     "vscode-oniguruma": "^1.5.1",
-    "vscode-textmate": "^5.4.1"
+    "vscode-textmate": "^6.0.0"
   }
 }
