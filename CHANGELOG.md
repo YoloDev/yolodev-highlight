@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.2.5](https://github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.4...highlight-v0.2.5) (2022-01-04)
+
+
+### Dependencies
+
+* update dependency vscode-textmate to v6 ([#188](https://github.com/YoloDev/yolodev-highlight/issues/188)) ([d241d3e](https://github.com/YoloDev/yolodev-highlight/commit/d241d3e2969ada47c4410ac1a8bf40909dbd9fcc))
+
 ### [0.2.4](https://www.github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.3...highlight-v0.2.4) (2021-12-09)
 
 
