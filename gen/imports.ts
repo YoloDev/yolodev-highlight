@@ -40,6 +40,10 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-cpp-syntaxes-cpp.tmLanguage.json"
       ).then((m) => m.default);
+    case "source.cpp.embedded.latex":
+      return import(
+        "../grammars/vscode/extensions-latex-syntaxes-cpp-grammar-bailout.tmLanguage.json"
+      ).then((m) => m.default);
     case "source.cpp.embedded.macro":
       return import(
         "../grammars/vscode/extensions-cpp-syntaxes-cpp.embedded.macro.tmLanguage.json"
@@ -216,6 +220,10 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-yaml-syntaxes-yaml.tmLanguage.json"
       ).then((m) => m.default);
+    case "text.bibtex":
+      return import(
+        "../grammars/vscode/extensions-latex-syntaxes-Bibtex.tmLanguage.json"
+      ).then((m) => m.default);
     case "text.git-commit":
       return import(
         "../grammars/vscode/extensions-git-base-syntaxes-git-commit.tmLanguage.json"
@@ -264,6 +272,18 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-search-result-syntaxes-searchResult.tmLanguage.json"
       ).then((m) => m.default);
+    case "text.tex":
+      return import(
+        "../grammars/vscode/extensions-latex-syntaxes-TeX.tmLanguage.json"
+      ).then((m) => m.default);
+    case "text.tex.latex":
+      return import(
+        "../grammars/vscode/extensions-latex-syntaxes-LaTeX.tmLanguage.json"
+      ).then((m) => m.default);
+    case "text.tex.markdown_latex_combined":
+      return import(
+        "../grammars/vscode/extensions-latex-syntaxes-markdown-latex-combined.tmLanguage.json"
+      ).then((m) => m.default);
     case "text.xml":
       return import(
         "../grammars/vscode/extensions-xml-syntaxes-xml.tmLanguage.json"
@@ -298,6 +318,8 @@ export const getLang = (lang: string): string | null => {
       return "source.coffee";
     case "source.cpp":
       return "source.cpp";
+    case "source.cpp.embedded.latex":
+      return "source.cpp.embedded.latex";
     case "source.cpp.embedded.macro":
       return "source.cpp.embedded.macro";
     case "source.cs":
@@ -406,6 +428,8 @@ export const getLang = (lang: string): string | null => {
       return "source.tsx";
     case "source.yaml":
       return "source.yaml";
+    case "text.bibtex":
+      return "text.bibtex";
     case "text.git-commit":
       return "text.git-commit";
     case "text.git-rebase":
@@ -434,6 +458,12 @@ export const getLang = (lang: string): string | null => {
       return "text.pug";
     case "text.searchResult":
       return "text.searchResult";
+    case "text.tex":
+      return "text.tex";
+    case "text.tex.latex":
+      return "text.tex.latex";
+    case "text.tex.markdown_latex_combined":
+      return "text.tex.markdown_latex_combined";
     case "text.xml":
       return "text.xml";
     case "text.xml.xsl":
