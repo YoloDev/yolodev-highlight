@@ -1,13 +1,16 @@
 {
 	"information_for_contributors": [
-		"This file has been converted from https://github.com/microsoft/vscode-markdown-tm-grammar/blob/master/syntaxes/markdown.tmLanguage",
+		"This file has been converted from https://github.com/jlelong/vscode-latex-basics/blob/master/syntaxes/markdown-latex-combined.tmLanguage.json",
 		"If you want to provide a fix or improvement, please create a pull request against the original repository.",
 		"Once accepted there, we are happy to receive an update request."
 	],
-	"version": "https://github.com/microsoft/vscode-markdown-tm-grammar/commit/a8545b220dc2cb109835571ba3458ff138e97361",
+	"version": "https://github.com/jlelong/vscode-latex-basics/commit/5f26a6daf70352a6f3f40b3b4437a605f5d954ee",
 	"name": "Markdown",
-	"scopeName": "text.html.markdown",
+	"scopeName": "text.tex.markdown_latex_combined",
 	"patterns": [
+		{
+			"include": "text.tex.latex"
+		},
 		{
 			"include": "#frontMatter"
 		},
@@ -2422,6 +2425,9 @@
 		"inline": {
 			"patterns": [
 				{
+					"include": "text.tex.latex"
+				},
+				{
 					"include": "#ampersand"
 				},
 				{
@@ -2435,9 +2441,6 @@
 				},
 				{
 					"include": "#raw"
-				},
-				{
-					"include": "#strikethrough"
 				},
 				{
 					"include": "#escape"
@@ -2534,9 +2537,6 @@
 				},
 				{
 					"include": "#link-ref-shortcut"
-				},
-				{
-					"include": "#strikethrough"
 				}
 			]
 		},
@@ -2688,9 +2688,6 @@
 				},
 				{
 					"include": "#link-ref-shortcut"
-				},
-				{
-					"include": "#strikethrough"
 				}
 			]
 		},
@@ -2850,76 +2847,8 @@
 					"name": "punctuation.definition.raw.markdown"
 				}
 			},
-			"match": "(`+)((?:[^`]|(?!(?<!`)\\1(?!`))`)*+)(\\1)",
+			"match": "(`+)([^`]|(?!(?<!`)\\1(?!`))`)*+(\\1)",
 			"name": "markup.inline.raw.string.markdown"
-		},
-		"strikethrough": {
-			"captures": {
-				"1": {
-					"name": "punctuation.definition.strikethrough.markdown"
-				},
-				"2": {
-					"patterns": [
-						{
-							"applyEndPatternLast": 1,
-							"begin": "(?=<[^>]*?>)",
-							"end": "(?<=>)",
-							"patterns": [
-								{
-									"include": "text.html.derivative"
-								}
-							]
-						},
-						{
-							"include": "#escape"
-						},
-						{
-							"include": "#ampersand"
-						},
-						{
-							"include": "#bracket"
-						},
-						{
-							"include": "#raw"
-						},
-						{
-							"include": "#bold"
-						},
-						{
-							"include": "#italic"
-						},
-						{
-							"include": "#image-inline"
-						},
-						{
-							"include": "#link-inline"
-						},
-						{
-							"include": "#link-inet"
-						},
-						{
-							"include": "#link-email"
-						},
-						{
-							"include": "#image-ref"
-						},
-						{
-							"include": "#link-ref-literal"
-						},
-						{
-							"include": "#link-ref"
-						},
-						{
-							"include": "#link-ref-shortcut"
-						}
-					]
-				},
-				"3": {
-					"name": "punctuation.definition.strikethrough.markdown"
-				}
-			},
-			"match": "(~+)((?:[^~]|(?!(?<!~)\\1(?!~))~)*+)(\\1)",
-			"name": "markup.strikethrough.markdown"
 		}
 	}
 }

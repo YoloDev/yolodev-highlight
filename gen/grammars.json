@@ -59,6 +59,12 @@
     "aliases": [],
     "grammarFile": "vscode/extensions-cpp-syntaxes-cpp.tmLanguage.json"
   },
+  "source.cpp.embedded.latex": {
+    "name": "C++",
+    "scopeName": "source.cpp.embedded.latex",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-latex-syntaxes-cpp-grammar-bailout.tmLanguage.json"
+  },
   "source.cpp.embedded.macro": {
     "name": "C++",
     "scopeName": "source.cpp.embedded.macro",
@@ -338,6 +344,12 @@
     "aliases": [],
     "grammarFile": "vscode/extensions-yaml-syntaxes-yaml.tmLanguage.json"
   },
+  "text.bibtex": {
+    "name": "BibTeX",
+    "scopeName": "text.bibtex",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-latex-syntaxes-Bibtex.tmLanguage.json"
+  },
   "text.git-commit": {
     "name": "Git Commit Message",
     "scopeName": "text.git-commit",
@@ -412,6 +424,24 @@
     "scopeName": "text.searchResult",
     "aliases": [],
     "grammarFile": "vscode/extensions-search-result-syntaxes-searchResult.tmLanguage.json"
+  },
+  "text.tex": {
+    "name": "TeX",
+    "scopeName": "text.tex",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-latex-syntaxes-TeX.tmLanguage.json"
+  },
+  "text.tex.latex": {
+    "name": "LaTeX",
+    "scopeName": "text.tex.latex",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-latex-syntaxes-LaTeX.tmLanguage.json"
+  },
+  "text.tex.markdown_latex_combined": {
+    "name": "Markdown",
+    "scopeName": "text.tex.markdown_latex_combined",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-latex-syntaxes-markdown-latex-combined.tmLanguage.json"
   },
   "text.xml": {
     "name": "XML",
