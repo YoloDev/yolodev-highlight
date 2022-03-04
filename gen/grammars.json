@@ -210,12 +210,6 @@
     "aliases": [],
     "grammarFile": "vscode/extensions-julia-syntaxes-julia.tmLanguage.json"
   },
-  "source.jupyter": {
-    "name": null,
-    "scopeName": "source.jupyter",
-    "aliases": [],
-    "grammarFile": "vscode/extensions-ipynb-syntaxes-jupyter.tmLanguage.json"
-  },
   "source.lua": {
     "name": "Lua",
     "scopeName": "source.lua",

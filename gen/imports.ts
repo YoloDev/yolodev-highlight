@@ -132,10 +132,6 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-julia-syntaxes-julia.tmLanguage.json"
       ).then((m) => m.default);
-    case "source.jupyter":
-      return import(
-        "../grammars/vscode/extensions-ipynb-syntaxes-jupyter.tmLanguage.json"
-      ).then((m) => m.default);
     case "source.lua":
       return import(
         "../grammars/vscode/extensions-lua-syntaxes-lua.tmLanguage.json"
@@ -382,8 +378,6 @@ export const getLang = (lang: string): string | null => {
       return "source.jsonnet";
     case "source.julia":
       return "source.julia";
-    case "source.jupyter":
-      return "source.jupyter";
     case "source.lua":
       return "source.lua";
     case "source.makefile":
