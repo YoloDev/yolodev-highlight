@@ -25,7 +25,7 @@
     "@types/prettier": "2.4.4",
     "download": "8.0.0",
     "js-yaml": "4.1.0",
-    "json5": "2.2.0",
+    "json5": "2.2.1",
     "mkdirp": "1.0.4",
     "node-stream-zip": "1.15.0",
     "ora": "6.1.0",
