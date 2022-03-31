@@ -176,6 +176,10 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-python-syntaxes-MagicRegExp.tmLanguage.json"
       ).then((m) => m.default);
+    case "source.rst":
+      return import(
+        "../grammars/vscode/extensions-restructuredtext-syntaxes-rst.tmLanguage.json"
+      ).then((m) => m.default);
     case "source.ruby":
       return import(
         "../grammars/vscode/extensions-ruby-syntaxes-ruby.tmLanguage.json"
@@ -400,6 +404,8 @@ export const getLang = (lang: string): string | null => {
       return "source.r";
     case "source.regexp.python":
       return "source.regexp.python";
+    case "source.rst":
+      return "source.rst";
     case "source.ruby":
       return "source.ruby";
     case "source.rust":

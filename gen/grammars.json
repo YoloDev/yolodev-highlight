@@ -276,6 +276,12 @@
     "aliases": [],
     "grammarFile": "vscode/extensions-python-syntaxes-MagicRegExp.tmLanguage.json"
   },
+  "source.rst": {
+    "name": null,
+    "scopeName": "source.rst",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-restructuredtext-syntaxes-rst.tmLanguage.json"
+  },
   "source.ruby": {
     "name": "Ruby",
     "scopeName": "source.ruby",
