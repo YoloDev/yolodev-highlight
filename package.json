@@ -30,7 +30,7 @@
     "node-stream-zip": "1.15.0",
     "ora": "6.1.0",
     "prettier": "2.6.2",
-    "rollup": "2.70.1",
+    "rollup": "2.70.2",
     "rollup-plugin-string": "3.0.0",
     "rollup-plugin-ts": "2.0.5",
     "ts-node": "10.7.0",
