@@ -1,6 +1,6 @@
 {
   "name": "@yolodev/highlight",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "Code highlighter using the vscode highlighting engine",
   "type": "module",
   "main": "dist/esm/index.js",
@@ -30,7 +30,7 @@
     "node-stream-zip": "1.15.0",
     "ora": "6.1.0",
     "prettier": "2.6.2",
-    "rollup": "2.75.6",
+    "rollup": "2.72.1",
     "rollup-plugin-string": "3.0.0",
     "rollup-plugin-ts": "3.0.2",
     "ts-node": "10.8.0",
