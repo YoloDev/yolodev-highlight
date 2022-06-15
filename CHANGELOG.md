@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.6](https://github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.5...highlight-v0.2.6) (2022-06-15)
+
+
+### Dependencies
+
+* **grammars:** update grammars ([#204](https://github.com/YoloDev/yolodev-highlight/issues/204)) ([ff1c700](https://github.com/YoloDev/yolodev-highlight/commit/ff1c70031bc718a707f80fd8bea36063002ff570))
+* **grammars:** update grammars ([#216](https://github.com/YoloDev/yolodev-highlight/issues/216)) ([d380b6d](https://github.com/YoloDev/yolodev-highlight/commit/d380b6dbd0294ed60e6d08920425f699fb3a62e9))
+* **grammars:** update grammars ([#227](https://github.com/YoloDev/yolodev-highlight/issues/227)) ([df0bcdd](https://github.com/YoloDev/yolodev-highlight/commit/df0bcdd9cc7366f0bc693ee02138fe09d0f558b2))
+* **grammars:** update grammars ([#238](https://github.com/YoloDev/yolodev-highlight/issues/238)) ([759fe81](https://github.com/YoloDev/yolodev-highlight/commit/759fe8170e4c67a6b0d67560e8821de98d1880bb))
+* **grammars:** update grammars ([#246](https://github.com/YoloDev/yolodev-highlight/issues/246)) ([8b05638](https://github.com/YoloDev/yolodev-highlight/commit/8b056381dac72aa88befd5e1a7840355922fac53))
+* update dependency node-fetch to 2.6.7 [security] ([#208](https://github.com/YoloDev/yolodev-highlight/issues/208)) ([0a08b6c](https://github.com/YoloDev/yolodev-highlight/commit/0a08b6c95e15642f24510c2b84182d953cf20825))
+* update dependency vscode-textmate to v7 ([#229](https://github.com/YoloDev/yolodev-highlight/issues/229)) ([8c21307](https://github.com/YoloDev/yolodev-highlight/commit/8c213079ba29175bf5deae67fcf1d413684f9e60))
+
 ### [0.2.5](https://github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.4...highlight-v0.2.5) (2022-01-04)
 
 
