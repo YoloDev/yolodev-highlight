@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.8](https://github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.7...highlight-v0.2.8) (2022-08-15)
+
+
+### Dependencies
+
+* **grammars:** update grammars ([#264](https://github.com/YoloDev/yolodev-highlight/issues/264)) ([553618c](https://github.com/YoloDev/yolodev-highlight/commit/553618c1848bf0070e5f30dc0f9badea84221f42))
+
 ## [0.2.7](https://github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.6...highlight-v0.2.7) (2022-07-17)
 
 
