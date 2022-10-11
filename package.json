@@ -16,7 +16,7 @@
   "devDependencies": {
     "@octokit/rest": "19.0.4",
     "@rollup/plugin-node-resolve": "15.0.0",
-    "@rollup/plugin-wasm": "5.2.0",
+    "@rollup/plugin-wasm": "6.0.0",
     "@types/bent": "7.3.2",
     "@types/download": "8.0.1",
     "@types/js-yaml": "4.0.5",
