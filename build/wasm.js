@@ -1,4 +1,4 @@
-import { HELPERS_ID, getHelpersModule } from './wasm/helper';
+import { HELPERS_ID, getHelpersModule } from './wasm/helper.js';
 
 import { createHash } from 'crypto';
 import fs from 'fs';
