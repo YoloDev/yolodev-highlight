@@ -18,7 +18,7 @@
     "@rollup/plugin-node-resolve": "15.0.1",
     "@rollup/plugin-wasm": "6.0.0",
     "@types/bent": "7.3.3",
-    "@types/download": "8.0.1",
+    "@types/download": "8.0.2",
     "@types/js-yaml": "4.0.5",
     "@types/json5": "2.2.0",
     "@types/mkdirp": "1.0.2",
