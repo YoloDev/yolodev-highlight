@@ -1,7 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import { string } from 'rollup-plugin-string';
 import ts from 'rollup-plugin-ts';
-import { wasm } from './build/wasm';
+import { wasm } from './build/wasm.js';
 
 export default {
   input: './index.ts',
