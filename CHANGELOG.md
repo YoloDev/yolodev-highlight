@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.9](https://github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.8...highlight-v0.2.9) (2023-02-10)
+
+
+### Dependencies
+
+* **grammars:** update grammars ([#272](https://github.com/YoloDev/yolodev-highlight/issues/272)) ([5145b05](https://github.com/YoloDev/yolodev-highlight/commit/5145b0520607a463a3285f995841037891222ede))
+* **grammars:** update grammars ([#280](https://github.com/YoloDev/yolodev-highlight/issues/280)) ([79c8526](https://github.com/YoloDev/yolodev-highlight/commit/79c85260a9ca3b6e9f96b9ff73d5e2d37e58c996))
+* **grammars:** update grammars ([#287](https://github.com/YoloDev/yolodev-highlight/issues/287)) ([ab0dc37](https://github.com/YoloDev/yolodev-highlight/commit/ab0dc375cb24e4acea02879ec8ce0638793dc66b))
+* **grammars:** update grammars ([#289](https://github.com/YoloDev/yolodev-highlight/issues/289)) ([c5b74a4](https://github.com/YoloDev/yolodev-highlight/commit/c5b74a4ae290ac5d711e0502d54f75c1d30ed256))
+* **grammars:** update grammars ([#307](https://github.com/YoloDev/yolodev-highlight/issues/307)) ([7618505](https://github.com/YoloDev/yolodev-highlight/commit/76185056dc130ce30cd969a91b0c6d6c2e1394a6))
+* **grammars:** update grammars ([#310](https://github.com/YoloDev/yolodev-highlight/issues/310)) ([26f79d6](https://github.com/YoloDev/yolodev-highlight/commit/26f79d62e2d3487759f62be8b58309e2771e0110))
+* update dependency json5 to 2.2.2 [security] ([#295](https://github.com/YoloDev/yolodev-highlight/issues/295)) ([d07583f](https://github.com/YoloDev/yolodev-highlight/commit/d07583f6f1a0c515eb66f398366d422b83fd072f))
+
 ## [0.2.8](https://github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.7...highlight-v0.2.8) (2022-08-15)
 
 
