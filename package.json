@@ -28,7 +28,7 @@
     "json5": "2.2.3",
     "mkdirp": "1.0.4",
     "node-stream-zip": "1.15.0",
-    "ora": "6.2.0",
+    "ora": "6.3.0",
     "prettier": "2.8.6",
     "rollup": "3.20.2",
     "rollup-plugin-string": "3.0.0",
