@@ -15,7 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "@octokit/rest": "19.0.7",
-    "@rollup/plugin-node-resolve": "15.0.1",
+    "@rollup/plugin-node-resolve": "15.0.2",
     "@rollup/plugin-wasm": "6.1.2",
     "@types/bent": "7.3.3",
     "@types/download": "8.0.2",
