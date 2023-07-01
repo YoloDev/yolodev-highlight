@@ -190,10 +190,16 @@
     "grammarFile": "vscode/extensions-json-syntaxes-JSON.tmLanguage.json"
   },
   "source.json.comments": {
-    "name": "JSON with comments",
+    "name": "JSON with Comments",
     "scopeName": "source.json.comments",
     "aliases": [],
     "grammarFile": "vscode/extensions-json-syntaxes-JSONC.tmLanguage.json"
+  },
+  "source.json.lines": {
+    "name": "JSON Lines",
+    "scopeName": "source.json.lines",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-json-syntaxes-JSONL.tmLanguage.json"
   },
   "source.jsonnet": {
     "name": "Jsonnet",
