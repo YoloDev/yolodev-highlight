@@ -124,6 +124,10 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-json-syntaxes-JSONC.tmLanguage.json"
       ).then((m) => m.default);
+    case "source.json.lines":
+      return import(
+        "../grammars/vscode/extensions-json-syntaxes-JSONL.tmLanguage.json"
+      ).then((m) => m.default);
     case "source.jsonnet":
       return import("../grammars/custom/jsonnet.tmLanguage.json").then(
         (m) => m.default
@@ -374,6 +378,8 @@ export const getLang = (lang: string): string | null => {
       return "source.json";
     case "source.json.comments":
       return "source.json.comments";
+    case "source.json.lines":
+      return "source.json.lines";
     case "source.jsonnet":
       return "source.jsonnet";
     case "jsonnet":
