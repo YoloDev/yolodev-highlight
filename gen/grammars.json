@@ -23,6 +23,12 @@
     "aliases": [],
     "grammarFile": "vscode/extensions-markdown-math-syntaxes-md-math-inline.tmLanguage.json"
   },
+  "source.asp.vb.net": {
+    "name": "ASP vb.NET",
+    "scopeName": "source.asp.vb.net",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-vb-syntaxes-asp-vb-net.tmLanguage.json"
+  },
   "source.batchfile": {
     "name": "Batch File",
     "scopeName": "source.batchfile",
@@ -194,6 +200,12 @@
     "scopeName": "source.json.comments",
     "aliases": [],
     "grammarFile": "vscode/extensions-json-syntaxes-JSONC.tmLanguage.json"
+  },
+  "source.json.comments.snippets": {
+    "name": "Snippets",
+    "scopeName": "source.json.comments.snippets",
+    "aliases": [],
+    "grammarFile": "vscode/extensions-json-syntaxes-snippets.tmLanguage.json"
   },
   "source.json.lines": {
     "name": "JSON Lines",
