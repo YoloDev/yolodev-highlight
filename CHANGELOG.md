@@ -1,5 +1,28 @@
 # Changelog
 
+## [0.2.10](https://github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.9...highlight-v0.2.10) (2024-04-05)
+
+
+### Dependencies
+
+* **grammars:** update grammars ([#318](https://github.com/YoloDev/yolodev-highlight/issues/318)) ([4c441e0](https://github.com/YoloDev/yolodev-highlight/commit/4c441e0941d3dd36921b6c688eeecab35135c4cd))
+* **grammars:** update grammars ([#332](https://github.com/YoloDev/yolodev-highlight/issues/332)) ([f0fbd15](https://github.com/YoloDev/yolodev-highlight/commit/f0fbd157f31d3944b3ab01af3d17bb88cc265812))
+* **grammars:** update grammars ([#345](https://github.com/YoloDev/yolodev-highlight/issues/345)) ([a3abcf1](https://github.com/YoloDev/yolodev-highlight/commit/a3abcf19cf6c896b30ab7a016aab93f8e2857c4b))
+* **grammars:** update grammars ([#366](https://github.com/YoloDev/yolodev-highlight/issues/366)) ([9fb96e8](https://github.com/YoloDev/yolodev-highlight/commit/9fb96e862e49d3fac549682ede0a743746e803de))
+* **grammars:** update grammars ([#377](https://github.com/YoloDev/yolodev-highlight/issues/377)) ([83c9467](https://github.com/YoloDev/yolodev-highlight/commit/83c9467d5533b1c6eb1a66a8e72ed89769075d99))
+* update dependency string.prototype.trimend to v1.0.6 ([#321](https://github.com/YoloDev/yolodev-highlight/issues/321)) ([186cf08](https://github.com/YoloDev/yolodev-highlight/commit/186cf088b11f2d24ce5e487e331357fde478e4df))
+* update dependency string.prototype.trimend to v1.0.7 ([#397](https://github.com/YoloDev/yolodev-highlight/issues/397)) ([30b31f7](https://github.com/YoloDev/yolodev-highlight/commit/30b31f7b9307b7eadee1d299733bb955db3f604b))
+* update dependency string.prototype.trimend to v1.0.8 ([#413](https://github.com/YoloDev/yolodev-highlight/issues/413)) ([b782b3a](https://github.com/YoloDev/yolodev-highlight/commit/b782b3a341791961dd1a16dd8485da0a6fae75a3))
+* update dependency tslib to v2.5.0 ([#323](https://github.com/YoloDev/yolodev-highlight/issues/323)) ([a44e52e](https://github.com/YoloDev/yolodev-highlight/commit/a44e52ecb1e6077290044afede02942c8f5dfed5))
+* update dependency tslib to v2.5.1 ([#354](https://github.com/YoloDev/yolodev-highlight/issues/354)) ([ce6c065](https://github.com/YoloDev/yolodev-highlight/commit/ce6c065823dce31551fc735daa7029ea7456dc28))
+* update dependency tslib to v2.5.2 ([#355](https://github.com/YoloDev/yolodev-highlight/issues/355)) ([889e48e](https://github.com/YoloDev/yolodev-highlight/commit/889e48ec2186d557c356279ead2e385fc51956b7))
+* update dependency tslib to v2.5.3 ([#363](https://github.com/YoloDev/yolodev-highlight/issues/363)) ([6f9b9c5](https://github.com/YoloDev/yolodev-highlight/commit/6f9b9c5723b6d57daa5137f79eaa1df5395da4bd))
+* update dependency tslib to v2.6.0 ([#373](https://github.com/YoloDev/yolodev-highlight/issues/373)) ([27ab730](https://github.com/YoloDev/yolodev-highlight/commit/27ab7304dc16ee0a9f18cc3b19a68e2079d7364e))
+* update dependency tslib to v2.6.1 ([#379](https://github.com/YoloDev/yolodev-highlight/issues/379)) ([5001b01](https://github.com/YoloDev/yolodev-highlight/commit/5001b01b671ecea6b1839327735c3a4824354c45))
+* update dependency tslib to v2.6.2 ([#391](https://github.com/YoloDev/yolodev-highlight/issues/391)) ([025f466](https://github.com/YoloDev/yolodev-highlight/commit/025f4662cab50f4c82205eb79c525c1672e1c475))
+* update dependency vscode-oniguruma to v1.7.0 ([#324](https://github.com/YoloDev/yolodev-highlight/issues/324)) ([c97afa9](https://github.com/YoloDev/yolodev-highlight/commit/c97afa97a838d1f48ef97022595ccd5d759f2279))
+* update dependency vscode-textmate to v7.0.4 ([#322](https://github.com/YoloDev/yolodev-highlight/issues/322)) ([33449c4](https://github.com/YoloDev/yolodev-highlight/commit/33449c41e7006ca7a577b84969a1ebe0797feb9f))
+
 ## [0.2.9](https://github.com/YoloDev/yolodev-highlight/compare/highlight-v0.2.8...highlight-v0.2.9) (2023-02-10)
 
 
