@@ -16,6 +16,10 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
       return import(
         "../grammars/vscode/extensions-markdown-math-syntaxes-md-math-inline.tmLanguage.json"
       ).then((m) => m.default);
+    case "source.asp.vb.net":
+      return import(
+        "../grammars/vscode/extensions-vb-syntaxes-asp-vb-net.tmLanguage.json"
+      ).then((m) => m.default);
     case "source.batchfile":
       return import(
         "../grammars/vscode/extensions-bat-syntaxes-batchfile.tmLanguage.json"
@@ -123,6 +127,10 @@ export const loadGrammarFile = (scope: string): Promise<string | null> => {
     case "source.json.comments":
       return import(
         "../grammars/vscode/extensions-json-syntaxes-JSONC.tmLanguage.json"
+      ).then((m) => m.default);
+    case "source.json.comments.snippets":
+      return import(
+        "../grammars/vscode/extensions-json-syntaxes-snippets.tmLanguage.json"
       ).then((m) => m.default);
     case "source.json.lines":
       return import(
@@ -310,6 +318,8 @@ export const getLang = (lang: string): string | null => {
       return "markdown.math.block";
     case "markdown.math.inline":
       return "markdown.math.inline";
+    case "source.asp.vb.net":
+      return "source.asp.vb.net";
     case "source.batchfile":
       return "source.batchfile";
     case "source.c":
@@ -378,6 +388,8 @@ export const getLang = (lang: string): string | null => {
       return "source.json";
     case "source.json.comments":
       return "source.json.comments";
+    case "source.json.comments.snippets":
+      return "source.json.comments.snippets";
     case "source.json.lines":
       return "source.json.lines";
     case "source.jsonnet":
